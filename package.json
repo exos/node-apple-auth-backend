@@ -1,0 +1,66 @@
+{
+  "name": "@exoshtw/apple-auth-backend",
+  "version": "0.1.0",
+  "description": "Logging with Apple",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx jest",
+    "lint": "npx eslint ./src",
+    "build": "rm -rf lib/**; npx babel src --out-dir lib --copy-files",
+    "prepublish": "npm run lint",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-recommended": "^4.0.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "husky": "^4.0.9",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "jest-spec-reporter": "^1.0.10"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  },
+  "keywords": [
+    "apple",
+    "logging"
+  ],
+  "author": "exos <exos@flixxo.com>",
+  "license": "GPL-2.0",
+  "husky": {
+    "hooks": {
+      "pre-commit": "./hooks/pre-commit.sh"
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/tests/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exos/node-apple-auth-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/exos/node-apple-auth-backend/issues"
+  },
+  "homepage": "https://github.com/exos/node-apple-auth-backend#readme"
+}
