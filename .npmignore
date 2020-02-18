@@ -2,5 +2,7 @@
 .eslintrc.js
 .gitignore
 hooks
-README.md
 src
+coverage
+tests
+_local
