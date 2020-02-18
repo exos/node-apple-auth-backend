@@ -1,6 +1,6 @@
 {
   "name": "@exoshtw/apple-auth-backend",
-  "version": "0.1.0",
+  "version": "0.1.0-rc1",
   "description": "Logging with Apple",
   "main": "lib/index.js",
   "directories": {
