@@ -6,7 +6,7 @@ server-side.
 
 ## Usage
 
-```EcmaScript
+```JavaScript
 import fs from 'fs';
 import path from 'path';
 import {getAuthToken} from '@exoshtw/node-apple-signin';
